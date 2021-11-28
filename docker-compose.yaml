@@ -1,0 +1,32 @@
+version: '3.6'
+
+services:
+
+  web-flask:
+    build: .
+    ports:
+      - "8080:5000"
+    volumes:
+      - .:/code
+    depends_on:
+      - db
+    networks:
+      - alsan-adam-net
+  db:
+    image: postgres
+    restart: always
+    ports:
+      - "8001:5432"
+    environment:
+      POSTGRES_PASSWORD: password
+    networks:
+      - alsan-adam-net
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - "8002:8080"
+
+networks:
+  alsan-adam-net:
