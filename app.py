@@ -5,11 +5,11 @@ from flask_marshmallow import Marshmallow
 
 app = Flask(__name__)
 api = Api(app)
-# @todo Use env vars to use local or docker connection string
+# @todo Use env vars, folder structure, seperating logic and data to use local or docker connection string
 # Docker uri for database
-# app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:password@db:5432/postgres'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:password@db:5432/postgres'
 # Localhost uri for database
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:password@localhost:8001/postgres'
+#app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:password@localhost:8001/postgres'
 db = SQLAlchemy(app)
 ma = Marshmallow(app)
 
