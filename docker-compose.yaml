@@ -8,6 +8,7 @@ services:
       - "8080:5000"
     volumes:
       - .:/code
+      - ./.env.docker:/code/.env
     depends_on:
       - db
     networks:
