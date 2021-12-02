@@ -9,11 +9,11 @@ API to a database model for CRUD.
 
     pip install requirements.txt
 
-### Run the app
+### Run the app (Which will run on port 5000)
 
     flask run
     
-## Docker Install
+## Docker Install (Which will run on port 8080)
 ### Install
 
 
