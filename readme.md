@@ -1,10 +1,10 @@
-
 # Python Backend REST API with Database application
 
 This is a bare-bones application providing a REST
 API to a database model for CRUD.
 
 ## Local Install
+
 ### Install
 
     pip install requirements.txt
@@ -12,14 +12,12 @@ API to a database model for CRUD.
 ### Run the app (Which will run on port 5000)
 
     flask run
-    
+
 ## Docker Install (Which will run on port 8080)
+
 ### Install
 
-
     docker-compose up
-
-
 
 # REST API
 
@@ -98,7 +96,6 @@ The REST API to the idea app is described below.
     Status: 204 No Content
     Connection: close
 
-
 ## Delete an Idea
 
 ### Request
@@ -114,4 +111,7 @@ The REST API to the idea app is described below.
     Status: 204 No Content
     Connection: close
 
+### Questions for Patrick
 
+How do I see the db? Can't find the info "Adam Test" "Id 1"
+When setting up a separate db, How do I add to that from flask via Terminal?
