@@ -115,3 +115,7 @@ The REST API to the idea app is described below.
 
 How do I see the db? Can't find the info "Adam Test" "Id 1"
 When setting up a separate db, How do I add to that from flask via Terminal?
+
+###Adam's Notes:
+
+## make sure docker is opened before compsing up docker-compose.yaml file
