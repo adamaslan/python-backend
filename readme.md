@@ -117,11 +117,22 @@ How do I see the db? Can't find the info "Adam Test" "Id 1"
 When setting up a separate db, How do I add to that from flask via Terminal?
 Challenge getting curl or postman working
 
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!-- <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
 <title>404 Not Found</title>
 <h1>Not Found</h1>
-<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p> -->
 
 ###Adam's Notes:
 
 ## make sure docker is opened before composing up docker-compose.yaml file
+
+###todos
+
+1finish python p
+2podcast make a list of dope python podcasts
+3cry
+4figure out DB design
+5plan for projects
+6google db design
+7find python / flask learning options
+8work on fetch
