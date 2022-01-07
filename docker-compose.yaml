@@ -8,6 +8,10 @@ services:
       - "8080:5000"
     volumes:
       - .:/code
+      - ./.env.docker:/code/.env
+    environment:
+      FLASK_ENV: docker
+      DATABASE_URL: postgresql://postgres:password@db:5432/postgres
     depends_on:
       - db
     networks:
@@ -22,11 +26,11 @@ services:
     networks:
       - alsan-adam-net
 
-  adminer:
-    image: adminer
-    restart: always
-    ports:
-      - "8002:8080"
+#  adminer:
+#    image: adminer
+#    restart: always
+#    ports:
+#      - "8002:8080"
 
 networks:
   alsan-adam-net:
