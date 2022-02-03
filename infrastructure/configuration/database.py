@@ -21,5 +21,5 @@ def create_all_table(app):
             from repository.orm import Idea
             database.create_all()
         except Exception as e:
-            print("database already exists: " + e)
+            print("database already exists: " + str(e))
 

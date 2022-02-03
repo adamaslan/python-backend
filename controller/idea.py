@@ -13,7 +13,12 @@ idea_service = IdeaService()
 
 class Idea(Resource):
     def get(self, idea_id):
-        return idea_schema.dump(idea_service.get_by_id(idea_id))
+        try:
+            idea = idea_service.get_idea(idea_id)
+            response = idea_schema.dump(idea), 200
+        except KeyError:
+            response = '', 404
+        return response
 
     def delete(self, idea_id):
         idea_service.delete_by_id(idea_id)

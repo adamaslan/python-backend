@@ -1,6 +1,8 @@
 environs
 flask
 flask-restful
+flask-apispec
 Flask-SQLAlchemy
 flask_marshmallow
+marshmallow-sqlalchemy
 psycopg2-binary
